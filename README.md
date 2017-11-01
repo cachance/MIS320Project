@@ -13,4 +13,4 @@
 3. Integrate Flask and SQLITE
 4. Create HTML Templates
 5. Format webpage with CSS
-6. Modify to include external access
+6. Modify to include external access 
