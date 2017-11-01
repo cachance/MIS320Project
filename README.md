@@ -4,10 +4,11 @@
 1. Create SQLITE database with functions
   - Create Tables
   - Use addrec() function to retireve form data and insert into table
----Helpful Links: https://www.tutorialspoint.com/flask/flask_sqlite.htm
-                  https://prateekvjoshi.com/2016/03/08/how-to-create-a-web-server-in-python-using-flask/
-                  http://www.cssdesk.com/64MKn
-                  MIS407 Class Notes
+---Helpful Resources: 
+https://www.tutorialspoint.com/flask/flask_sqlite.htm
+https://prateekvjoshi.com/2016/03/08/how-to-create-a-web-server-in-python-using-flask/
+http://www.cssdesk.com/64MKn
+MIS407 Class Notes
                   
 2. Write Flask file
 3. Integrate Flask and SQLITE
