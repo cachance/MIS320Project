@@ -8,6 +8,7 @@
   - Minimap
   - Hyperclick
   - Autocomplete-python
+      ~ Choose Jedi
   - Python-tools
 ### 3. Download Python  -  https://www.python.org/
    -Make sure to click the option to set the python path environment variable
