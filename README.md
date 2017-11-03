@@ -14,4 +14,6 @@ MIS407 Class Notes
 3. Integrate Flask and SQLITE
 4. Create HTML Templates
 5. Format webpage with CSS  -  http://www.cssdesk.com/64MKn
-6. Modify to include external access 
+6. Modify to include external access
+  - Use ipconfig to on computer running webserver to find the IP Address
+  - Access from another computer using http://xx.xx.xx.xx:port# as format
