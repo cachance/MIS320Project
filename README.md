@@ -13,5 +13,5 @@ MIS407 Class Notes
 2. Write Flask file
 3. Integrate Flask and SQLITE
 4. Create HTML Templates
-5. Format webpage with CSS
+5. Format webpage with CSS  -  http://www.cssdesk.com/64MKn
 6. Modify to include external access 
