@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BFC Portal</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+</head>
+<body>
+  <div class="header">
+    <img src="{{url_for('static', filename='images/bloomington_fitness_center.png')}}" class="wrap align-left" />
+    <h1 class="logo">BFC Portal</h1>
+    <strong><nav>
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('employeePortal') }}">Home</a></li>
+        <li><a href="{{ url_for('membership') }}">Home</a></li>
+        <li><a href="{{ url_for('courses') }}">Home</a></li>
+        <li><a href="{{ url_for('calendar') }}">Home</a></li>
+        <li><a href="{{ url_for('employee') }}">Home</a></li>
+        <li><a href="{{ url_for('products') }}">Home</a></li>
+      </ul>
+    </nav></strong>
+  </div>
+  <div class="container">
+    {%block content%}
+    {%endblock%}
+  </div>
+  <div class="footer">
+    <p>Bloomington Fitness Center</p>
+  </div>
+</body>
