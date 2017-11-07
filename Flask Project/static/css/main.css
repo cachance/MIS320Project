@@ -6,7 +6,6 @@ img {  display: block;}
 img.wrap {  max-width: 70%;  margin: 0px 0px; }
 img.align-right {  float: right;  margin-left: 30px; }
 img.align-left {  float: left;  margin-right: 30px; }
-
 /*
 * General html block formating
 */
@@ -33,11 +32,10 @@ h1.logo {
 
 div.header {
   height: 100px;
-  width:90%;
-  background-color:#dfb887;
+  width:100%;
+  background-color:#e77d01;
   margin:  auto;
   border: 2px solid #9b8554;
-  border-radius: 0px 50px 5px 0px;
 }
 div.container  {
   width: 90%;
