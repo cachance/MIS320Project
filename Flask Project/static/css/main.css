@@ -23,58 +23,66 @@ h1.logo {
   text-transform: uppercase;
   float: left;
   margin-top: 35px;
-  margin-left: 15px;
 }
 
 /*
 * Formating of three display areas, header, contrain, and footer
 */
 
+html, body
+{
+  height: 100%
+}
+
 div.header {
+  position: absolute;
+  left: 0; right: 0;
   height: 100px;
-  width:100%;
   background-color:#e77d01;
   margin:  auto;
-  border: 2px solid #9b8554;
+  border: 2px solid #000000;
+}
+
+div.sidenav {
+  position: absolute;
+  left: 0; top: 100px; bottom: 30px;
+  width: 223px;
+  background-color:#e77d01;
+  border: 2px solid #000000;
 }
 div.container  {
-  width: 90%;
-  background-color:#E6E6FA;
+  position: absolute;
+  left: 223px; top: 100px; right: 0; bottom: 30px;
+  background-color:#ffffff;
   color: #111111;
-  margin: 0 auto;
-  border: 2px solid #B4B4D8;
-  border-radius: 3px 3px 3px 3px;
+  margin: auto;
+  border: 2px solid #000000;
 }
+
 div.footer {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
   height: 30px;
-  width: 90%;
   background-color:#dfb887;
   margin: 0 auto;
-  border:2px solid #9b8554;
-  border-radius: 3px 3px 50px 3px;
+  border:2px solid #000000;
 }
 
 /*
 * Formatting of our menu content
 */
 ul.menu {
-  float: right;
-  margin-top: 60px;
-  margin-right: 40px;
-}
-
-ul.menu li {
-  display: inline;
-}
-
-
-ul.menu li + li {
-  margin-left: 20px;
+  float: left;
+  margin-top: 15px;
+  list-style-type: none;
 }
 
 ul.menu li a {
-  color: #444444;
+  padding: 15px 5px 15px 0px;
   text-decoration: none;
+  font-size: 20px;
+  color: #444444;
+  display: block;
 }
 
 ul.menu li:hover {
