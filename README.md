@@ -20,4 +20,5 @@ http://www.cssdesk.com/64MKn
   - Access from another computer using http://xx.xx.xx.xx:port# as format
 7. Modify to use Heroku Web Service
 8. Modify SQL to use POSTGRES
-      http://jgtr.github.io/blog/2013/07/28/deploying-a-sqlite3-database-to-heroku-for-production-using-postgres/ 
+      http://jgtr.github.io/blog/2013/07/28/deploying-a-sqlite3-database-to-heroku-for-production-using-postgres/
+      http://blog.theodo.fr/2017/03/developping-a-flask-web-app-with-a-postresql-database-making-all-the-possible-errors/ 
