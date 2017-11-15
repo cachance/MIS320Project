@@ -1,7 +1,59 @@
 {%extends "layout.html"%}
 {%block content%}
-<div class="home">
-  <h1>Homepage</h1>
-  <p>Test Homepage</p>
-</div>
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+</head>
+<body>
+  <div class="search">
+    <div class="wrapper">
+      <input type="text" />
+      <button>Search</button>
+    </div>
+    <button type="button" onclick="alert('Stop clicking me, it hurts!')">New Member</button>
+  </div>
+  <div class="reportTable">
+    <table align="center">
+      <caption>TOTAL CURRENT MEMERSHIPS AS OF DATE</caption>
+      <tr>
+        <th bgcolor="#E5E4E2">Platinum</th>
+        <th bgcolor="#D4AF37">Gold</th>
+        <th bgcolor="#CoCoCo">Silver</th>
+        <th bgcolor="#CD7F32">Bronze</th>
+        <th bgcolor="#ooD9oo">Total</th>
+      </tr>
+      <tr>
+        <td>40</td>
+        <td>60</td>
+        <td>80</td>
+        <td>100</td>
+        <td>280</td>
+      </tr>
+    </table>
+  </div>
+  <div class="reports">
+    <h2>REPORTS</h2>
+    <h4>EMPLOYEE</h4>
+    <strong><nav>
+      <ul class="employee_menu">
+        <li><a href="{{ url_for('employee_roster') }}">EMPLOYEE ROSTER</a></li>
+        <li><a href="{{ url_for('zipcode_search') }}">ZIPCODE SEARCH</a></li>
+        <li><a href="{{ url_for('instructors') }}">INSTRUCTORS</a></li>
+      </ul>
+    </nav></strong>
+    <h4>MEMBERS</h4>
+    <strong><nav>
+      <ul class="members_menu">
+        <li><a href="{{ url_for('current_members') }}">CURRENT MEMBERS</a></li>
+        <li><a href="{{ url_for('inactive_members') }}">INACTIVE MEMBERS</a></li>
+      </ul>
+    </nav></strong>
+    <h4>COURSES</h4>
+    <strong><nav>
+      <ul class="courses_menu">
+        <li><a href="{{ url_for('current_courses') }}">CURRENT COURSES</a></li>
+        <li><a href="{{ url_for('upcoming_courses') }}">UPCOMING COURSES</a></li>
+        <li><a href="{{ url_for('course_history') }}">COURSE HISTORY</a></li>
+      </ul>
+    </nav></strong>
+</body>
 {%endblock%}

@@ -10,6 +10,37 @@ WEB_APP_NAME = "BFC PORTAL"
 def home(name=WEB_APP_NAME):
     return render_template("home.html", content=name)
 
+@app.route('/home/employee_roster')
+def employee_roster(name=WEB_APP_NAME):
+    return render_template("employee_roster.html", content=name)
+
+@app.route('/home/zipcode_search')
+def zipcode_search(name=WEB_APP_NAME):
+    return render_template("zipcode_search.html", content=name)
+
+@app.route('/home/instructors')
+def instructors(name=WEB_APP_NAME):
+    return render_template("instructors.html", content=name)
+
+@app.route('/home/current_members')
+def current_members(name=WEB_APP_NAME):
+    return render_template("current_members.html", content=name)
+
+@app.route('/home/inactive_members')
+def inactive_members(name=WEB_APP_NAME):
+    return render_template("inactive_members.html", content=name)
+
+@app.route('/home/current_courses')
+def current_courses(name=WEB_APP_NAME):
+    return render_template("current_courses.html", content=name)
+
+@app.route('/home/upcoming_courses')
+def upcoming_courses(name=WEB_APP_NAME):
+    return render_template("upcoming_courses.html", content=name)
+
+@app.route('/home/course_history')
+def course_history(name=WEB_APP_NAME):
+    return render_template("course_history.html", content=name)
 
 @app.route('/login', methods=['POST'])
 def employeeLogin():

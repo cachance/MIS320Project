@@ -19,9 +19,9 @@ body {
 
 h1.logo {
   font-size: 1.8em;
-  color: #211111;
+  color: #FFFFFF;
   text-transform: uppercase;
-  float: left;
+  text-align: center;
   margin-top: 35px;
 }
 
@@ -38,34 +38,25 @@ div.header {
   position: absolute;
   left: 0; right: 0;
   height: 100px;
-  background-color:#e77d01;
+  background-color:#FF571A;
   margin:  auto;
   border: 2px solid #000000;
 }
 
 div.sidenav {
   position: absolute;
-  left: 0; top: 100px; bottom: 30px;
+  left: 0; top: 100px; bottom: 0px;
   width: 223px;
-  background-color:#e77d01;
+  background-color:#FF571A;
   border: 2px solid #000000;
 }
 div.container  {
   position: absolute;
-  left: 223px; top: 100px; right: 0; bottom: 30px;
-  background-color:#ffffff;
+  left: 223px; top: 100px; right: 0; bottom: 0px;
+  background-color:#FFFFFF;
   color: #111111;
   margin: auto;
   border: 2px solid #000000;
-}
-
-div.footer {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 30px;
-  background-color:#dfb887;
-  margin: 0 auto;
-  border:2px solid #000000;
 }
 
 /*
@@ -81,19 +72,87 @@ ul.menu li a {
   padding: 15px 5px 15px 0px;
   text-decoration: none;
   font-size: 20px;
-  color: #444444;
+  color: #FFFFFF;
   display: block;
 }
 
 ul.menu li:hover {
-  color: #444444;
+  color: #FFFFFF;
   text-decoration: overline underline;
 }
 
-div.footer p {
-  color: #444444;
-  font-family: "Courier New", Courier;
-  font-size: 13px;
-  margin: 7px 15px;
-  font-style: italic;
+/*
+* Formatting of HomePage
+*/
+
+div.search {
+  margin-top: 20px;
+  margin-left: 250px;
+  display: inline-block;
+}
+
+div.wrapper {
+  border:1px solid;
+  display:inline-block;
+}
+
+table {
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+th, td {
+  width: 150px;
+}
+
+td {
+  height: 50px;
+}
+
+div.reports {
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+ul.employee_menu {
+  text-indent: 25px;
+  list-style-type: none;
+}
+
+ul.members_menu {
+  text-indent: 25px;
+  list-style-type: none;
+}
+
+
+ul.courses_menu {
+  text-indent: 25px;
+  list-style-type: none;
+}
+
+ul.employee_menu li {
+  margin-top: 10px;
+}
+
+ul.members_menu li {
+  margin-top: 10px;
+}
+
+ul.courses_menu li {
+  margin-top: 10px;
+}
+
+ul.employee_menu li a{
+  text-decoration: none;
+}
+ul.members_menu li a{
+  text-decoration: none;
+}
+ul.courses_menu li a{
+  text-decoration: none;
 }
