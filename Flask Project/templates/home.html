@@ -12,7 +12,7 @@
     <button type="button" onclick="alert('Stop clicking me, it hurts!')">New Member</button>
   </div>
   <div class="reportTable">
-    <table align="center">
+    <table id="t01">
       <caption>TOTAL CURRENT MEMERSHIPS AS OF DATE</caption>
       <tr>
         <th bgcolor="#E5E4E2">Platinum</th>
@@ -30,30 +30,89 @@
       </tr>
     </table>
   </div>
-  <div class="reports">
-    <h2>REPORTS</h2>
-    <h4>EMPLOYEE</h4>
-    <strong><nav>
-      <ul class="employee_menu">
-        <li><a href="{{ url_for('employee_roster') }}">EMPLOYEE ROSTER</a></li>
-        <li><a href="{{ url_for('zipcode_search') }}">ZIPCODE SEARCH</a></li>
-        <li><a href="{{ url_for('instructors') }}">INSTRUCTORS</a></li>
-      </ul>
-    </nav></strong>
-    <h4>MEMBERS</h4>
-    <strong><nav>
-      <ul class="members_menu">
-        <li><a href="{{ url_for('current_members') }}">CURRENT MEMBERS</a></li>
-        <li><a href="{{ url_for('inactive_members') }}">INACTIVE MEMBERS</a></li>
-      </ul>
-    </nav></strong>
-    <h4>COURSES</h4>
-    <strong><nav>
-      <ul class="courses_menu">
-        <li><a href="{{ url_for('current_courses') }}">CURRENT COURSES</a></li>
-        <li><a href="{{ url_for('upcoming_courses') }}">UPCOMING COURSES</a></li>
-        <li><a href="{{ url_for('course_history') }}">COURSE HISTORY</a></li>
-      </ul>
-    </nav></strong>
+  <div class="bottomWrapper">
+    <div class="reports">
+      <h2>REPORTS</h2>
+      <h4>EMPLOYEE</h4>
+      <strong><nav>
+        <ul class="employee_menu">
+          <li><a href="{{ url_for('employee_roster') }}">EMPLOYEE ROSTER</a></li>
+          <li><a href="{{ url_for('zipcode_search') }}">ZIPCODE SEARCH</a></li>
+          <li><a href="{{ url_for('instructors') }}">INSTRUCTORS</a></li>
+        </ul>
+      </nav></strong>
+      <h4>MEMBERS</h4>
+      <strong><nav>
+        <ul class="members_menu">
+          <li><a href="{{ url_for('current_members') }}">CURRENT MEMBERS</a></li>
+          <li><a href="{{ url_for('inactive_members') }}">INACTIVE MEMBERS</a></li>
+        </ul>
+      </nav></strong>
+      <h4>COURSES</h4>
+      <strong><nav>
+        <ul class="courses_menu">
+          <li><a href="{{ url_for('current_courses') }}">CURRENT COURSES</a></li>
+          <li><a href="{{ url_for('upcoming_courses') }}">UPCOMING COURSES</a></li>
+          <li><a href="{{ url_for('course_history') }}">COURSE HISTORY</a></li>
+        </ul>
+      </nav></strong>
+    </div>
+    <div class="tablebox">
+      <table id="t02">
+        <caption>CLASS SCHEDULE FOR TODAY</caption>
+        <tr>
+          <th>Time</th>
+          <th>CourseID</th>
+          <th>CourseName</th>
+          <th>Room#</th>
+          <th>Instructor</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>123</td>
+          <td>Yoga101</td>
+          <td>210</td>
+          <td>John Smith</td>
+        </table>
+        <table id="t03">
+          <caption>IN-SESSION</caption>
+          <tr>
+            <th>Time</th>
+            <th>CourseID</th>
+            <th>CourseName</th>
+            <th>Room#</th>
+            <th>Instructor</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>123</td>
+            <td>Yoga101</td>
+            <td>210</td>
+            <td>John Smith</td>
+          </table>
+          <table id="t04">
+            <caption>TODAY'S UPCOMING CLASSES</caption>
+            <tr>
+              <th>Time</th>
+              <th>CourseID</th>
+              <th>CourseName</th>
+              <th>Room#</th>
+              <th>Instructor</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>123</td>
+              <td>Yoga101</td>
+              <td>210</td>
+              <td>John Smith</td>
+            </table>
+          </div>
+          <div class="textBox">
+            <label for="title">NEWS AND UPCOMING EVENTS</label>
+            <textarea rows="35" cols="50">
+              Space for information that needs to get passed to all employees
+            </textarea>
+          </div>
+        </div>
 </body>
 {%endblock%}

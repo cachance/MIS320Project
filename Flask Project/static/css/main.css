@@ -96,7 +96,8 @@ div.wrapper {
   display:inline-block;
 }
 
-table {
+table#t01 {
+  margin: auto;
   margin-top: 50px;
   border-collapse: collapse;
 }
@@ -114,9 +115,14 @@ td {
   height: 50px;
 }
 
-div.reports {
+div.bottomWrapper {
+  width: 100%;
   margin-top: 150px;
+}
+
+div.reports {
   margin-left: 200px;
+  float: left;
 }
 
 ul.employee_menu {
@@ -155,4 +161,40 @@ ul.members_menu li a{
 }
 ul.courses_menu li a{
   text-decoration: none;
+}
+
+div.tablebox {
+  float: left;
+  margin-left: 175px;
+  width: 600px;
+}
+
+table#t02 {
+  margin-top: 50px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table#t03 {
+  margin-top: 50px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table#t04 {
+  margin-top: 50px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+div.textBox {
+  float: left;
+  margin-left: 150px;
+}
+label {
+  display:block;
+}
+
+textarea {
+  display: block;
 }
