@@ -116,13 +116,16 @@ td {
 }
 
 div.bottomWrapper {
-  width: 100%;
-  margin-top: 150px;
+  margin-top: 40px;
+  display: flex;
+  width: 90%;
 }
 
 div.reports {
-  margin-left: 200px;
-  float: left;
+  height: 100%;
+  max-width: 200px;
+  display: inline-block;
+  margin-right: 100px;
 }
 
 ul.employee_menu {
@@ -164,9 +167,11 @@ ul.courses_menu li a{
 }
 
 div.tablebox {
-  float: left;
-  margin-left: 175px;
-  width: 600px;
+  height: 100%;
+  min-width: 400px;
+  flex: auto 0 0;
+  display: inline-block;
+  margin-right: 100px;
 }
 
 table#t02 {
@@ -188,8 +193,8 @@ table#t04 {
 }
 
 div.textBox {
-  float: left;
-  margin-left: 150px;
+  max-width: 200px;
+  display: inline-block;
 }
 label {
   display:block;
