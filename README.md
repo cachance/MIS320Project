@@ -17,6 +17,7 @@ MIS407 Class Notes
   http://blog.theodo.fr/2017/03/developping-a-flask-web-app-with-a-postresql-database-making-all-the-possible-errors/
   http://blog.y3xz.com/blog/2012/08/16/flask-and-postgresql-on-heroku
   http://clouddatafacts.com/heroku-connect/flask_psycopg2/flask_psycopg2_createapp.html
+  https://wiki.postgresql.org/wiki/Using_psycopg2_with_PostgreSQL
 6. Modify to include external access - Heroku
   - Use ipconfig to on computer running webserver to find the IP Address
   - Access from another computer using http://xx.xx.xx.xx:port# as format
