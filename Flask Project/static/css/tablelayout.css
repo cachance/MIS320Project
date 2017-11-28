@@ -1,0 +1,13 @@
+/*
+* Formating for Table Layouts
+*/
+div.tablebox {
+  width: 100%;
+  display: inline-block;
+}
+
+table#t05{
+  margin-top: 50px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}

@@ -203,3 +203,16 @@ label {
 textarea {
   display: block;
 }
+
+table.report-table {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.report-table td, table.report-table th {
+  border: 1px solid #000000;
+  padding: 3px 3px;
+}
