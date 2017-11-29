@@ -26,10 +26,6 @@ def instructors(name=WEB_APP_NAME):
 def current_members(name=WEB_APP_NAME):
     return render_template("current_members.html", content=name)
 
-@app.route('/home/inactive_members')
-def inactive_members(name=WEB_APP_NAME):
-    return render_template("inactive_members.html", content=name)
-
 @app.route('/home/current_courses')
 def current_courses(name=WEB_APP_NAME):
     return render_template("current_courses.html", content=name)

@@ -96,22 +96,23 @@ div.wrapper {
   display:inline-block;
 }
 
-table#t01 {
+table.t01 {
+  overflow: auto;
   margin: auto;
   margin-top: 50px;
   border-collapse: collapse;
 }
 
-table, th, td {
+table.t01, table.t01 th, table.t01 td {
   border: 2px solid black;
   text-align: center;
 }
 
-th, td {
+table.t01 th, table.t01 td {
   width: 150px;
 }
 
-td {
+table.t01 td {
   height: 50px;
 }
 
