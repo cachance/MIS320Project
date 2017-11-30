@@ -1,7 +1,59 @@
 {%extends "layout.html"%}
 {%block content%}
-<div class="employee">
-  <h1>Employee</h1>
-  <p>This is a test website</p>
+<div class="search">
+  <div class="wrapper">
+    <input type="text" />
+    <button>Search</button>
+  </div>
+  <button type="button" onclick="alert('Stop clicking me, it hurts!')">New Member</button>
+</div>
+<div class="employeeWrapper">
+<div class="employeetextBox">
+  <textarea rows="30" cols="40">
+    Insert Photo Here
+  </textarea>
+</div>
+<div class="employeeformWrapper">
+  <form action="/submit" method="POST" id=submit>
+    <label for="name">NAME</label>
+    <input type="text" value="" name="name">
+    <label for="employee#">EMPLOYEE#</label>
+    <input type="text" value="" name="employee#">
+    <br>
+    <br>
+    <label for="address">ADDRESS</label>
+    <input type="text" value="" name="address">
+    <label for="datehired">DATE HIRED</label>
+    <input type="text" value="" name="datehired">
+    <br>
+    <br>
+    <label for="city">CITY</label>
+    <input type="text" value="" name="city">
+    <label for="state">STATE</label>
+    <input type="text" value="" name="state">
+    <label for="zip">ZIP</label>
+    <input type="text" value="" name="zip">
+    <label for="status">STATUS</label>
+    <input type="text" value="" name="status">
+    <br>
+    <br>
+    <label for="phone">PHONE</label>
+    <input type="text" value="" name="phone">
+    <label for="position">POSITION</label>
+    <input type="text" value="" name="position">
+    <br>
+    <br>
+    <label for="dob">DOB</label>
+    <input type="text" value="" name="dob">
+    <label for="age">AGE</label>
+    <input type="text" value="" name="age">
+    <label for="gender">GENDER</label>
+    <input type="text" value="" name="gender">
+    <br>
+    <br>
+    <label for="email">EMAIL</label>
+    <input type="text" value="" name="email">
+  </form>
+</div>
 </div>
 {%endblock%}

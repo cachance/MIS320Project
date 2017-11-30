@@ -117,7 +117,7 @@ table.t01 td {
 }
 
 div.bottomWrapper {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   width: 90%;
 }
@@ -126,7 +126,8 @@ div.reports {
   height: 100%;
   max-width: 200px;
   display: inline-block;
-  margin-right: 100px;
+  margin-right: 150px;
+  margin-left: 100px;
 }
 
 ul.employee_menu {
@@ -169,8 +170,7 @@ ul.courses_menu li a{
 
 div.tablebox {
   height: 100%;
-  min-width: 400px;
-  flex: auto 0 0;
+  width: 600px;
   display: inline-block;
   margin-right: 100px;
 }
@@ -179,25 +179,28 @@ table#t02 {
   margin-top: 50px;
   border-collapse: collapse;
   border: 1px solid black;
+  width: 100%;
 }
 
 table#t03 {
   margin-top: 50px;
   border-collapse: collapse;
   border: 1px solid black;
+  width: 100%;
 }
 
 table#t04 {
   margin-top: 50px;
   border-collapse: collapse;
   border: 1px solid black;
+  width: 100%;
 }
 
-div.textBox {
+div.hometextBox {
   max-width: 200px;
   display: inline-block;
 }
-label {
+div.hometextBox.label {
   display:block;
 }
 
@@ -216,4 +219,16 @@ table.report-table {
 table.report-table td, table.report-table th {
   border: 1px solid #000000;
   padding: 3px 3px;
+}
+
+div.employeeWrapper {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 100%;
+}
+
+div.employeetextBox {
+  width: 200px;
+  float: left;
+  margin-right: 250px;
 }
